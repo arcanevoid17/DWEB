@@ -1,16 +1,23 @@
-# Onepage-Minecraft-Server-Website-
-A simple onepage website for you minecraft server.
+# Minecraft Server Website
 
-So, if you're wanting to use this template for your website, you'll need a webserver/hosting.
+This is a simple website for a Minecraft server that you can use to display information about your server. It includes multiple buttons and the ability to copy your server's IP.
 
-You're not allowed to 'steal' this template and post it ANYWHERE else.
-The offical links for this template are:
-  https://www.spigotmc.org/resources/onepage-minecraft-server-website.56408/
-  https://github.com/TheSparkPlays/Onepage-Minecraft-Server-Website-
-  
-And for the live demo:
-  https://www.rickklaasboer.online/demo/onepage-template/
+## Setup
 
-That's basically it for now.
+To set up this website for your Minecraft server, follow these steps:
 
-Good luck with setting up your website!
+1. Fork this repository to your Github account.
+2. Edit the `index.html` file to include information about your server.
+3. Customize the `assets/style.css` file to change the look and feel of the website.
+4. Upload any images or other assets you want to use to the `assets/images/` folder.
+5. Commit your changes and push them to your forked repository.
+6. Host this site on your favourite hosting!
+
+## Features
+
+This Minecraft server website includes the following features:
+
+- Copy server's ip
+- Multiple buttons
+- Customizable
+- Easy to use
