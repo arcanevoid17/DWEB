@@ -160,10 +160,32 @@
 
             <div class="play-text">
                 <h1>Play now</h1>
-                <p>Use the IP play.demacia.fun to access the server via pirated and/or original Minecraft at any time.</p>
-                <a class="btn btn-sucess" id="copy-btn">Copy IP</a>
-                <span class="play-copy-alert" id="play-copy-alert" href="#">IP copied!</span>
+                <p>Use the IP <span id="server-ip">play.demacia.fun</span> to access the server via pirated and/or original Minecraft at any time.</p>
+                <a class="btn btn-success" id="copy-btn" onclick="copyIP()">Copy IP</a>
+                <span class="play-copy-alert" id="play-copy-alert" style="display: none;">IP copied!</span>
             </div>
+            
+            <script>
+                function copyIP() {
+                    // Get the IP text from the span element
+                    var ip = document.getElementById("server-ip").textContent;
+            
+                    // Copy the IP to the clipboard
+                    navigator.clipboard.writeText(ip).then(function() {
+                        // Show the "IP copied!" alert
+                        var alert = document.getElementById("play-copy-alert");
+                        alert.style.display = "inline";  // Show the alert
+            
+                        // Hide the alert after 2 seconds
+                        setTimeout(function() {
+                            alert.style.display = "none";
+                        }, 2000);
+                    }).catch(function(err) {
+                        console.error('Could not copy text: ', err);
+                    });
+                }
+            </script>
+            
 
             <div class="play-images play-img-2">
                 <img src="../Images/steve-swords.webp" alt="Image of a steve and alex">
